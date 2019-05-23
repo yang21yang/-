@@ -1,0 +1,1078 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GOGOPAY</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/animate.min.css">
+    <script src="js/bootstrap.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 100%;
+        }
+
+        .row {
+            margin-right: 0 !important;
+        }
+
+        .my_size {
+            font-size: 32px;
+            color: #333959;
+        }
+        .my_head div a{
+            text-decoration:none;
+        }
+        #back-to-top{
+            position:fixed;
+            display:none;
+            bottom:80px;
+            right:80px;
+            z-index: 100;      
+        }
+        #back-to-top img{
+            text-align:center;
+            display:block;
+            background:transparent url(img/ding.png) ;
+        }
+        #back-to-top img:hover{
+            background:transparent url(img/ding_hover.png) ;
+        }
+
+        .my_conta {
+            height: 111px;
+            background: rgba(51, 57, 89, 1);
+            line-height: 100px;
+            text-align: center;
+        }
+
+        .my_conta .row div img {
+            width: 72px;
+            height: 78px;
+            margin-right: 36px;
+        }
+
+        .my_head div a {
+            color: white;
+            margin-left: 16px;
+        }
+
+        .my_head div a:hover {
+            color: #F76B1C;
+        }
+
+        .my_head .my_a {
+            border-radius: 25px;
+            border: 1px solid white;
+            width: 110px;
+            height: 36px;
+            text-align: center;
+            line-height: 22px;
+            margin-left: 19px;
+        }
+
+        .my_body_one {
+            background-image: url(./img/Bitmap@2x.png);
+            width: 100%;
+            height: 709px;
+            -moz-background-size: 100% 100%;
+            -o-background-size: 100% 100%;
+            -webkit-background-size: 100% 100%;
+        }
+
+        .blank {
+            height: 510px;
+            background: #fff;
+        }
+
+        .my_row {
+            text-align: center;
+            color: #fff;
+            margin: 0 auto;
+        }
+
+        .my_body_one .my_row div a {
+            background: rgba(255, 255, 255, 1);
+            border-radius: 22px;
+            font-size: 14px;
+            color: #F76B1C;
+            width: 160px;
+            height: 44px;
+            text-align: center;
+            line-height: 35px;
+        }
+
+        .my_body_one .img2 {
+            width: 1213px;
+            height: 650px;
+            margin-top: 100px;
+        }
+
+        .my_body_two {
+            background-image: url(./img/Bitmapone.png);
+            width: 100%;
+            height: 740px;
+            -moz-background-size: 100% 100%;
+            -o-background-size: 100% 100%;
+            -webkit-background-size: 100% 100%;
+            color: #333959;
+        }
+
+        .my_row1 {
+            text-align: center;
+            margin: 0 auto;
+            color: #333959;
+            top: 66px;
+
+        }
+
+        .my_body_two .box {
+            width: 144px;
+            height: 6px;
+            background: rgba(247, 107, 28, 1);
+            text-align: center;
+            margin: 0 auto
+        }
+
+        .my_bei{
+            justify-content: center;
+            padding: 100px;
+        }
+
+        .my_bei div p {
+            text-align: -webkit-auto;
+            font-size: 14px;
+            font-family: PingFangSC-Regular;
+            font-weight: 400;
+            color: rgba(51, 57, 89, 1);
+            line-height: 36px;
+            margin-left: 200px
+        }
+
+        .my_back {
+            display: flex;
+        }
+        /*  */
+        .my_body_three {
+            background: white;
+            width: 100%;
+            height: 607px;
+        }
+
+        .my_body_three .my_three_box div {
+            width: 28px;
+            height: 6px;
+            background: rgba(247, 107, 28, 1);
+            border-radius: 3px;
+            border: 1px solid rgba(247, 107, 28, 1);
+            margin-top: 66px;
+            display: inline-block;
+        }
+
+        .my_three {
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        .my_body_three .box {
+            width: 144px;
+            height: 6px;
+            background: rgba(247, 107, 28, 1);
+            margin-left: 376px;
+            margin: 0 auto;
+        }
+
+        .my_fa {
+            width: 600px;
+            height: 220px;
+            background: #fff;
+            border: 1px solid #F76B1C;
+            margin-top: 66px;
+        }
+
+        .my_fa .fa_left {
+            float: left;
+        }
+
+        .my_fa .fa_right {
+            float: left;
+            margin-top: 30px;
+            margin-left: 40px;
+        }
+
+        .my_fa div img {
+            width: 100px;
+            height: 100px;
+            margin-left: 40px;
+            margin-top: 30px;
+        }
+
+        .my_body_four {
+            background-image: url(./img/BitmapCopy.png);
+            width: 100%;
+            height: 500px;
+            -moz-background-size: 100% 100%;
+            -o-background-size: 100% 100%;
+            -webkit-background-size: 100% 100%;
+        }
+
+        .my_data {
+            width: 1000px;
+            color: white;
+            padding: 0;
+            margin-left: 420px;
+            text-align: center;
+        }
+
+        .my_data div:hover {
+            color: #333959;
+        }
+
+        .my_data div {
+            margin-top: 172px;
+            text-align: center
+        }
+
+        .my_duct div img {
+            width: 960px;
+            height: 640px;
+            margin-top: 233px;
+            animation-direction: alternate;
+            animation-fill-mode: forwards;
+        }
+
+        .my_duct .duct_rigint {
+            margin-left: 432px;
+            margin-top: 66px;
+            ;
+        }
+
+        .duct_rigint .box {
+            width: 144px;
+            height: 6px;
+            background: rgba(247, 107, 28, 1);
+        }
+
+        .duct_the {
+            width: 600px;
+            height: 251px;
+            font-size: 14px;
+            font-family: PingFangSC-Regular;
+            font-weight: 400;
+            color: rgba(128, 139, 145, 1);
+            line-height: 27px;
+            letter-spacing: 4px;
+        }
+
+        .duct_der {
+            display: flex;
+            margin-top: 66px;
+        }
+
+        .duct_der div:hover {
+            transform: scale(1.1);
+        }
+
+        .duct_der_centre {
+            display: flex;
+            margin-top: 233px;
+            margin-left: 399px;
+        }
+
+        .duct_der_centre .der_di {
+            width: 229px;
+            height: 173px;
+            background: rgba(249, 249, 249, 1);
+            border-radius: 10px;
+            display: flex;
+            left: 56px;
+            margin-left: 36px;
+        }
+
+        .duct_der .der_di {
+            width: 229px;
+            height: 173px;
+            background: rgba(249, 249, 249, 1);
+            border-radius: 10px;
+            display: flex;
+            margin-left: 83px;
+        }
+
+        .der_di:hover {
+            transform: scale(1.1);
+        }
+
+        .der_di div img {
+            display: flex;
+            width: 110px;
+            height: 105px;
+            text-align: center;
+            margin-left: 66px;
+            margin-top: 99px;
+        }
+
+        .der_di div div img {
+            display: flex;
+            width: 38px;
+            height: 36px;
+            text-align: center;
+            margin-top: -68px;
+            margin-left: 75px;
+        }
+
+        .der_di div div span {
+            display: flex;
+            margin-top: -33px;
+            margin-left: 127px;
+            font-size: 20px;
+            color: #333959;
+        }
+
+        .duct_centre {
+            width: 653px;
+            height: 50px;
+            font-size: 14px;
+            font-family: PingFangSC-Regular;
+            font-weight: 400;
+            color: rgba(51, 57, 89, 1);
+            line-height: 25px;
+            letter-spacing: 5px;
+            margin-left: 399px;
+        }
+
+        .my_body_seven {
+            background-image: url(./img/Bitmap.png);
+            width: 100%;
+            height: 860px;
+            -moz-background-size: 100% 100%;
+            -o-background-size: 100% 100%;
+            -webkit-background-size: 100% 100%;
+            margin-top: 66px;
+        }
+
+        .my_fa_seven {
+            width: 76px;
+            height: 76px;
+            margin-left: 28px;
+            margin-top: 36px;
+        }
+
+        .fa_left_seven img {
+            margin-top: 6px;
+        }
+
+        .my_contact{
+            display: block;
+            padding: 88px;
+        }
+        .my_the {
+            display: -webkit-box;
+            margin-top: 26px
+            
+        }
+        .fa_right_seven {
+            font-size: 14px;
+            font-family: PingFangSC-Regular;
+            font-weight: 400;
+            color: rgba(51, 57, 89, 1);
+            line-height: 25px;
+            letter-spacing: 5px;
+            color: #F76B1C;
+        }
+
+        .duct_rigint_eight {
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        .duct_rigint_eight .box {
+            width: 144px;
+            height: 6px;
+            background: rgba(247, 107, 28, 1);
+            margin: 0 auto;
+            text-align: center
+        }
+
+        .my_eight {
+            width: 300px;
+            height: 380px;
+            background: rgba(255, 255, 255, 1);
+            box-shadow: 0px 2px 20px 0px rgba(200, 200, 200, 0.5);
+            margin-top: 99px;
+            left: 366px;
+            margin-left: 80px
+        }
+
+        .my_eight:hover {
+            transform: scale(1.1);
+        }
+
+        .my_eight h2 {
+            font-size: 36px;
+            font-family: PingFangSC-Regular;
+            font-weight: 400;
+            color: rgba(51, 57, 89, 1);
+            line-height: 50px;
+            letter-spacing: 10px;
+            margin-left: 70px;
+            margin-top: 46px;
+        }
+
+        .my_eight h3 {
+            font-size: 24px;
+            font-family: PingFangSC-Regular;
+            font-weight: 400;
+            color: rgba(247, 107, 28, 1);
+            line-height: 33px;
+            margin-left: 88px;
+            margin-top: 76px;
+        }
+
+        .my_eight p {
+            font-size: 14px;
+            font-family: PingFangSC-Regular;
+            font-weight: 400;
+            color: rgba(51, 57, 89, 1);
+            line-height: 20px;
+            letter-spacing: 4px;
+            margin-left: 76px;
+            margin-top: 6px;
+        }
+
+        .my_eight div a {
+            width: 160px;
+            height: 44px;
+            background: rgba(247, 107, 28, 1);
+            border-radius: 22px;
+            font-size: 16px;
+            font-family: PingFangSC-Regular;
+            font-weight: 400;
+            color: rgba(255, 255, 255, 1);
+            line-height: 30px;
+            letter-spacing: 5px;
+            margin-left: 52px;
+            margin-top: 56px;
+        }
+
+        .my_body_nine {
+            background-image: url(./img/BitmapCopy2.png);
+            width: 100%;
+            height: 500px;
+            -moz-background-size: 100% 100%;
+            -o-background-size: 100% 100%;
+            -webkit-background-size: 100% 100%;
+        }
+
+        .my_nine p {
+            font-size: 48px;
+            font-family: PingFangSC-Regular;
+            font-weight: 400;
+            color: rgba(51, 57, 89, 1);
+            line-height: 67px;
+            letter-spacing: 13px;
+            text-align: center;
+            line-height: 300px;
+        }
+
+        .my_nine a {
+            width: 200px;
+            height: 44px;
+            background: rgba(255, 255, 255, 1);
+            border-radius: 22px;
+            font-size: 18px;
+            font-family: PingFangSC-Semibold;
+            font-weight: 600;
+            color: rgba(247, 107, 28, 1);
+            line-height: 30px;
+            letter-spacing: 5px;
+            margin-left: 914px;
+            margin-top: -99px;
+        }
+
+        .my_body_the {
+            width: 100%;
+            height: 800px;
+            background: rgba(51, 57, 89, 1);
+            opacity: 0.8049;
+        }
+
+        .my_input p textarea {
+            border: 1px solid #333959;
+            font-size: 12px;
+            height: 38px;
+            width: 575px;
+            color: rgba(202, 202, 202, 1);
+            background: #333959;
+            word-wrap: break-word;
+            outline: none;
+        }
+
+        .fa_left_the {
+            width: 44px;
+            height: 44px;
+        }
+
+        .my_go {
+            font-size: 12px;
+            font-family: PingFangSC-Semibold;
+            font-weight: 600;
+            color: rgba(255, 255, 255, 1);
+            line-height: 25px;
+            letter-spacing: 5px;
+            margin-top: 233px;
+            text-align: center;
+        }
+
+        @media screen and (max-width: 1910px) {
+            .my_eight {
+                left: 240px !important;
+            }
+
+            .my_nine a {
+                margin-left: 699px !important;
+            }
+
+            .duct_der .der_di {
+                width: 218px !important;
+                margin-left: 145px !important;
+                margin-right: -77px !important;
+            }
+
+            .my_data {
+                margin-left: 358px !important;
+            }
+
+            .my_three_box {
+                margin-left: 125px !important;
+            }
+
+            .my_three {
+                margin-right: 256px !important;
+            }
+
+            .duct_the {
+                width: 666px !important;
+            }
+
+            .duct_the p {
+                margin-left: 111px !important;
+            }
+
+            .duct_centre {
+                margin-left: 330px !important;
+            }
+
+            .duct_der_centre {
+                margin-left: 321px !important;
+            }
+
+            .duct_rigint {
+                margin-left: 498px !important;
+            }
+
+            .duct_rigint1 {
+                margin-left: 376px !important;
+            }
+
+            .my_input {
+                margin-left: 199px !important;
+            }
+
+            .my_input p {
+                width: 585px !important;
+            }
+
+            .my_input div {
+                width: 190px !important;
+                margin-right: 3px !important
+            }
+
+            .my_input div input {
+                width: 111px !important;
+            }
+            .my_min{
+                margin-left: 312px !important;
+            }
+            .fa_one{
+                margin-left: 222px !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="index">
+        <p id="back-to-top"><img style="width:50px;height: 50px;" src="/img/ding.png" alt=""></p>
+        
+        <!-- 头部 -->
+        <div id="index" class="container my_conta">
+            <div class="row my_head">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-6 mt-2">
+                    <img src="./img/Group 22@2x.png" alt="">
+                    <a href="#index">主页</a>
+                    <a href="#about">关于我们</a>
+                    <a href="#product">产品介绍</a>
+                    <a href="#contact">联系我们</a>
+                </div>
+                <div class="col-lg-5 my_t">
+                    <a href = "/login">登陆</a>
+                    <a class="my_a btn btn-outline-primary text-white" href="#about">了解更多</a>
+                </div>
+            </div>
+        </div>
+        <!-- 主页 -->
+        <div class=" my_body_one">
+            <div class="my_row">
+                <div class="my_col animated fadeInUpBig delay-1s">
+                    <h1 style="margin-top: 138px;display: -webkit-inline-box; ">GOGOPAY 免签管理系统</h1>
+                    <h4 style="margin-top: 34px;">Manage System</h4>
+                    <div style="margin-top: 55px;">
+                        <a class="btn btn-outline-primary text-white" href=" ">了解更多</a>
+                    </div>
+                    <img class="img2 animated fadeInUpBig delay-1s" src="./img/bodyone.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="blank"></div>
+        <!-- 关于我们 -->
+        <div id="about" class="my_body_two">
+                <div class="my_row1">
+                    <div class="my_col">
+                        <p class="my_size" style="margin-top:99px;display: -webkit-inline-box;">公司介绍</p>
+                        <p>Company lntroductlon</p>
+                        <div class="box"></div>
+                    </div>
+                    <div class="row my_bei">
+                        <div class="col-lg-6 ">
+                            <p>
+                                公司长期致力于产业互联网金融领域的研究与实践，自创新“综合支付方法+分账记账方法+综合代付”的泛交易资金清结算管理系统和综合解决方案，该综合解决方案体系突破了传统商业银行对接新兴互联网商业模式的服务瓶颈，为平台客户实现统收统付与分账结算管理。
+                            </p>
+                            <p style="margin-top: 66px">
+                                和谐友好的团队：团队成员亲如兄弟姐妹，相互帮助，相互理解，相互学习、相互支持氛围轻松的团队
+                                管理人性化的团队：以人为本的个性化管理，定期举办交流活动、工作经验交流会等。积极向上的团队
+                                个人职业规划：重点挖掘员工个性，鼓励自主创新、主动积极工作，注重企业与个人的双赢战略</p>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="my_back animated fadeInRightBig delay-1s">
+                                <img src="./img/Bitmap1.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div class="container my_body_three" id="three">
+            <div class="row my_three">
+                <div class="col-lg-6">
+                    <p class="my_size" style="margin-top:56px;">技术团队</p>
+                    <p>Technical Team</p>
+                    <div style="margin-top:26px;" class="box"></div>
+                </div>
+                <div class="col-lg-6"></div>
+            </div>
+            <div class="row science">
+                <div class="col-lg-6">
+                    <div class="my_fa fa_one" style="margin-left: 266px;">
+                        <div class="fa_left">
+                            <img src="./img/hh.png" alt="">
+                        </div>
+                        <div class="fa_right">
+                            <p>姓名：王宇</p>
+                            <p>职务：技术总监</p>
+                            <img style="width: 18px !important;height: 17px !important;margin-left:-1px;margin-top: -8px;;"
+                                src="./img/wu.png" alt="">
+                            <img style="width: 18px !important;height: 17px !important;margin-left:-1px;margin-top: -8px;;"
+                                src="./img/wu.png" alt="">
+                            <img style="width: 18px !important;height: 17px !important;margin-left:-1px;margin-top: -8px;;"
+                                src="./img/wu.png" alt="">
+                            <img style="width: 18px !important;height: 17px !important;margin-left:-1px;margin-top: -8px;;"
+                                src="./img/wu.png" alt="">
+                        </div>
+                        <div style="margin-top:152px;margin-left:40px;">
+                            简介：负责一个公司的技术管理体系的建设和维护，技术和业务具有深入理解，对行业技术发展趋势和管理现状具有准确的判断。</div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="my_fa" style="margin-left: 80px;">
+                        <div class="fa_left">
+                            <img src="./img/yy.png" alt="">
+                        </div>
+                        <div class="fa_right">
+                            <p>姓名：刘洋</p>
+                            <p>职务：产品设计</p>
+                            <img style="width: 18px !important;height: 17px !important;margin-left:-1px;margin-top: -8px;;"
+                                src="./img/wu.png" alt="">
+                            <img style="width: 18px !important;height: 17px !important;margin-left:-1px;margin-top: -8px;;"
+                                src="./img/wu.png" alt="">
+                            <img style="width: 18px !important;height: 17px !important;margin-left:-1px;margin-top: -8px;;"
+                                src="./img/wu.png" alt="">
+                            <img style="width: 18px !important;height: 17px !important;margin-left:-1px;margin-top: -8px;;"
+                                src="./img/wu.png" alt="">
+                        </div>
+                        <div style="margin-top:152px;margin-left:40px;">
+                            简介：创造性的综合信息处理过程,通过多种元素如线条、符号、数字、色彩等方式的组合把产品的形状以平面或立体的形式展现出来。</div>
+                    </div>
+                </div>
+            </div>
+            <div class="row science" style="display:none">
+                <div class="col-lg-6">
+                    <div class="my_fa fa_one" style="margin-left: 266px;">
+                        <div class="fa_left">
+                            <img src="./img/you.png" alt="">
+                        </div>
+                        <div class="fa_right">
+                            <p>姓名：黄珊珊</p>
+                            <p>职务：产品经理</p>
+                            <img style="width: 18px !important;height: 17px !important;margin-left:-1px;margin-top: -8px;;"
+                                src="./img/wu.png" alt="">
+                            <img style="width: 18px !important;height: 17px !important;margin-left:-1px;margin-top: -8px;;"
+                                src="./img/wu.png" alt="">
+                            <img style="width: 18px !important;height: 17px !important;margin-left:-1px;margin-top: -8px;;"
+                                src="./img/wu.png" alt="">
+                            <img style="width: 18px !important;height: 17px !important;margin-left:-1px;margin-top: -8px;;"
+                                src="./img/wu.png" alt="">
+                        </div>
+                        <div style="margin-top:152px;margin-left:40px;">简介：负责市场调查并根据产品、市场及用户等的需求，确定开发何种产品，选择何种业务模式、商业模式等。
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="my_fa" style="margin-left: 80px;">
+                        <div class="fa_left">
+                            <img src="./img/coco.png" alt="">
+                        </div>
+                        <div class="fa_right">
+                            <p>姓名：曾慧</p>
+                            <p>职务：全栈开发</p>
+                            <img style="width: 18px !important;height: 17px !important;margin-left:-1px;margin-top: -8px;;"
+                                src="./img/wu.png" alt="">
+                            <img style="width: 18px !important;height: 17px !important;margin-left:-1px;margin-top: -8px;;"
+                                src="./img/wu.png" alt="">
+                            <img style="width: 18px !important;height: 17px !important;margin-left:-1px;margin-top: -8px;;"
+                                src="./img/wu.png" alt="">
+                            <img style="width: 18px !important;height: 17px !important;margin-left:-1px;margin-top: -8px;;"
+                                src="./img/wu.png" alt="">
+                        </div>
+                        <div style="margin-top:152px;margin-left:40px;">简介：指掌握多种技能，并能利用多种技能独立完成产品，同时具备前端和后台能力。</div>
+                    </div>
+                </div>
+            </div>
+            <div class="my_three_box" style="text-align: center;margin: 0 auto;">
+                <div class="three_box"></div>
+                <div class="three_box" style="margin-left:10px;"></div>
+            </div>
+
+
+        </div>
+        <div class="my_body_four">
+            <div class="row my_data">
+                <div class="col-lg-4">
+                    <h2 id="number1">8000</h2>
+                    <p>用户访问</p>
+                    <p>The user to access</p>
+                </div>
+                <div class="col-lg-4">
+                    <h2 id="number2">2000</h2>
+                    <p>用户新增</p>
+                    <p>The user of new</p>
+                </div>
+                <div class="col-lg-4">
+                    <h2 id="number3">1600</h2>
+                    <p>用户购买</p>
+                    <p>Users to buy</p>
+                </div>
+            </div>
+        </div>
+        <!-- 产品介绍 -->
+        <div id="product" class="my_body_five">
+            <div class="row my_duct">
+                <div class="col-lg-6 animated fadeInLeftBig delay-1s">
+                    <img src="./img/zu1_23.png" alt="">
+                </div>
+                <div class="col-lg-6">
+                    <div class="duct_rigint">
+                        <p class="my_size" style="margin-top:99px;display: -webkit-inline-box;">产品介绍</p>
+                        <p style="margin-top:0;">Product lntroductlon</p>
+                        <div style="margin-top:22px;" class="box"></div>
+                    </div>
+                    <div class="duct_the">
+                        <p style="margin-left: 36px;margin-top: 99px">
+                            第三方账户支付是指为用户提供与银行或金融机构支付结算系统接口的通道服务，实现资金转移和支付结算功能的一种支付服务。第三方支付机构作为双方交易的支付结算服务的中间商，需要提供支付服务通道，并通过第三方支付平台实现交易和资金转移结算安排的功能
+                        </p>
+                        <p style="margin-left: 36px;margin-top: 33px">
+                            通信代收费账户是移动运营商为其用户提供的一种小额支付账户，用户在互联网上购买电子书、歌曲、视频、软件、游戏等虚拟产品时，铜鼓偶手机发送短信等方式进行后台认证，并将账单记录在用户的通信费账单中，月底进行合单收取。
+                        </p>
+                    </div>
+                    <div class="duct_der">
+                        <div class="der_di">
+                            <div>
+                                <img style="margin-top: 33px;" src="./img/quanmian2.png" alt="">
+                                <div>
+                                    <img src="./img/qianmian1.png" alt="">
+                                    <span>全面</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="der_di">
+                            <div>
+                                <img style="margin-top: 33px;" src="./img/zhuanye1.png" alt="">
+                                <div>
+                                    <img src="./img/zhuanye2.png" alt="">
+                                    <span>专业</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="my_body_six">
+            <div class="row my_duct">
+                <div class="col-lg-6">
+                    <div class="duct_rigint duct_rigint1">
+                        <p class="my_size" style="margin-top:122px;display: -webkit-inline-box;">GOGOPAY插件</p>
+                        <p style="margin-top:0;margin-left: 40px;">Gogopay plug-in</p>
+                        <div style="margin-top:22px; margin-left: 22px" class="box"></div>
+                    </div>
+                    <div class="duct_centre">
+                        <p style="margin-left: 36px;margin-top: 99px"> Payjs for
+                            WooCommerce微信个人支付插件，是采用官方微信个人支付接口，支持微信扫码支付和公众号原生支付功能，适合任意WooCommerce主题，此插件对WooCommerce兼容良好，同时对apache
+                            和nginx 完美兼容。本插件最大特色是支持个人申请微信支付接口。</p>
+                        <p style="margin-left: 36px;margin-top: 33px">
+                            微信支付宝整合插件,一键整合微信支付宝付款功能.是一款基于Easypay进行二次开发的微信支付宝付款插件，可一键接入微信支付宝，可快速接入FastAdmin的其它插件</p>
+                    </div>
+                    <div class="duct_der_centre">
+                        <div class="der_di">
+                            <div>
+                                <img style="margin-top: 33px;" src="./img/quanmian2.png" alt="">
+                                <div>
+                                    <img src="./img/qianmian1.png" alt="">
+                                    <span>全面</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="der_di">
+                            <div>
+                                <img style="margin-top: 33px;" src="./img/zhuanye1.png" alt="">
+                                <div>
+                                    <img src="./img/zhuanye2.png" alt="">
+                                    <span>专业</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 animated fadeInRightBig delay-1s">
+                    <img style="width:350px;height:718px;margin-left: 299px;" src="./img/Apple iPhone X Space Grey@2x.png"
+                        alt="">
+                </div>
+            </div>
+        </div>
+        <div class="my_body_seven">
+            <div class="row my_duct">
+                <div class="col-lg-6">
+                    <div class="duct_rigint">
+                        <p class="my_size" style="margin-top:99px;display: -webkit-inline-box;">为什么选择我们</p>
+                        <p style="margin-top:0;margin-left: 42px;">Why choose us</p>
+                        <div style="margin-top:22px;" class="box"></div>
+                    </div>
+                    <div class="duct_centre">
+                        <div class="my_fa_seven">
+                            <div class="fa_left_seven">
+                                <img style="width:76px;height:76px;margin-top:0;" src="./img/Group 30.png" alt="">
+                            </div>
+                            <div class="fa_right_seven">
+                                <p style="width:460px;margin-left: 99px;margin-top:-52px;">整合银行、第三方支付及电信运营商等多家服务商</p>
+                            </div>
+                        </div>
+                        <div class="my_fa_seven">
+                            <div class="fa_left_seven">
+                                <img style="width:76px;height:76px;margin-top:0;" src="./img/Group 31.png" alt="">
+                            </div>
+                            <div class="fa_right_seven">
+                                <p style="width:460px;margin-left: 99px;margin-top:-52px;">为支付需求客户提供快捷、灵活、标准的支付服务</p>
+                            </div>
+                        </div>
+                        <div class="my_fa_seven">
+                            <div class="fa_left_seven">
+                                <img style="width:76px;height:76px;margin-top:0;" src="./img/Group 32.png" alt="">
+                            </div>
+                            <div class="fa_right_seven">
+                                <p style="width:460px;margin-left: 99px;margin-top:-52px;">打造“简单+安全+智慧+标准”的“云支付”平台。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 animated fadeInRightBig delay-1s">
+                    <img style="width:660px;height:441px;margin-left: 99px;" src="./img/Group13.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="my_body_eight">
+            <div class="duct_rigint_eight">
+                <p class="my_size" style="margin-top:106px;display: -webkit-inline-box;">套餐价格</p>
+                <p style="margin-top:0;">Package Price</p>
+                <div style="margin-top:22px;" class="box"></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4  my_eight">
+                    <h2>微信</h2>
+                    <h3 style="color:#F76B1C">¥99.99</h3>
+                    <p>有效期：30天</p>
+                    <div><a class="btn  text-white" href=" ">咨询开通</a></div>
+                </div>
+                <div class="col-lg-4 my_eight">
+                    <h2>支付宝</h2>
+                    <h3 style="color:#F76B1C">¥99.99</h3>
+                    <p>有效期：30天</p>
+                    <div><a class="btn  text-white" href=" ">咨询开通</a></div>
+                </div>
+                <div class="col-lg-4 my_eight">
+                    <h2>云闪付</h2>
+                    <h3 style="color:#F76B1C">¥99.99</h3>
+                    <p>有效期：30天</p>
+                    <div><a class="btn  text-white" href=" ">咨询开通</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="my_body_nine">
+            <div class="my_nine">
+                <p style="margin-top: 166px;">已有超过10,00名用户信赖</p>
+                <a class="btn  text-white" href=" ">加入我们</a>
+            </div>
+        </div>
+        <!-- 联系我们 -->
+        <div id="contact" class="my_body_the">
+            <div class="duct_rigint_eight">
+                <p class="my_size" style="margin-top:88px;display: -webkit-inline-box; color: #fff;">联系我们</p>
+                <p style="margin-top:0; color: #fff;">Contact us</p>
+                <div style="margin-top:22px;text-align:center;margin: 0 auto" class="box"></div>
+            </div>
+            <div class="row my_contact" >
+                <div class="col-lg-6" >
+                    <div class="my_the">
+                        <div class="fa_left_the my_min" style="margin-left:456px">
+                            <img src="./img/lianxi.png" alt="">
+                        </div>
+                        <div class="fa_right_seven">
+                            <p style="margin-left:16px ;margin-top:12px">电话：12345607910</p>
+                        </div>
+                    </div>
+                    <div class="my_the my_min" style="margin-left:456px">
+                        <div class="fa_left_the">
+                            <img src="./img/Group 24.png" alt="">
+                        </div>
+                        <div class="fa_right_seven">
+                            <p style="margin-left:16px ;margin-top:12px">邮箱：12345607@qq,com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="my_the">
+                        <div class="fa_left_the" style="margin-left:99px">
+                            <img src="./img/qq.png" alt="">
+                        </div>
+                        <div class="fa_right_seven">
+                            <p style="margin-left:16px ;margin-top:12px">QQ：12345607@qq,com</p>
+                        </div>
+                    </div>
+                    <div class="my_the" >
+                        <div class="fa_left_the" style="margin-left:99px">
+                            <img src="./img/weixin.png" alt="">
+                        </div>
+                        <div class="fa_right_seven">
+                            <p style="margin-left:16px ;margin-top:12px">微信：12345607@qq,com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="my_go">GOGOPAY版权所有&#169 2019保留所有权利| GOGOPAY</div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript">
+
+        
+        //当滚动条的位置处于距顶部100像素以下时，跳转链接出现，否则消失
+        $(function () {
+            $(window).scroll(function(){
+                if ($(window).scrollTop()>100){
+                    $("#back-to-top").fadeIn(1500);
+                }
+                else
+                {
+                    $("#back-to-top").fadeOut(1500);
+                }
+            });
+            $("#back-to-top").click(function(){
+                //$('body,html').animate({scrollTop:0},1000);
+                if ($('html').scrollTop()) {
+                        $('html').animate({ scrollTop: 0 }, 1000);
+                        return false;
+                    }
+                    $('body').animate({ scrollTop: 0 }, 1000);
+                        return false;            
+                });       
+            });    
+       
+
+        var numbering = 0;
+        var isIn = false;
+        var isOut = false;
+
+        function showNumber(pos, target, ) {
+            var nowTimestamp = Date.now();
+            var step = target / 2000;
+            numbering++;
+            //设置元素的text
+            var intervalId = setInterval(() => {
+                var currVal = (Date.now() - nowTimestamp) * step;
+                $("#number".concat(pos)).text(currVal.toFixed(0));
+                if (currVal >= target) {
+                    $("#number".concat(pos)).text(target);
+                    clearInterval(intervalId);
+                    numbering--;
+                }
+            }, 10);
+        }
+        showNumber(1, 2000);
+        showNumber(2, 2000);
+        showNumber(3, 2000);
+
+        window.onscroll = function () { //绑定scroll事件
+            var t = document.documentElement.scrollTop || document.body.scrollTop; //获取滚动距离
+            var top_div = document.getElementById("my_body_four"); //查询并定义div元素
+            if (t >= 2100 && t <= 2150 && numbering === 0 && isIn === false && isOut == true) { //判断
+                isIn = true;
+                isOut = false;
+                showNumber(1, 8000);
+                showNumber(2, 2600);
+                showNumber(3, 2000);
+                return;
+            }
+            isOut = true;
+            isIn = false;
+        }
+
+        // 技术团队轮播
+        var index = 0;
+        var timer = setInterval(function () {
+            index = (index == 2) ? 0 : index + 1;
+            $(".science").hide().eq(index - 1).show()
+            $(".three_box").css('margin-left', '0px').eq(index - 1).css('margin-left', '20px')
+            console.log(index)
+        }, 2000);
+    </script>
+</body>
+
+</html>
